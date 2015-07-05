@@ -1,7 +1,6 @@
 from pager import log_incident
 import resin
 from config import RESIN_JWT, PD_SERVICE_KEY, RESIN_APP
-import time
 
 # Connect to resin API
 connection = resin.Connection(JWT=RESIN_JWT)
