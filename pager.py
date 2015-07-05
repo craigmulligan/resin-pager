@@ -17,7 +17,7 @@ def log_incident(device, app=None, service_key=None):
             'last_seen_time': device['last_seen_time']
         },
         'client': device['name'],
-        'client_url': 'https://dashboard.resin.io/dashboard/apps/' + str(app) + '/devices/' + str(device['id'] +'?tab=logs')
+        'client_url': 'https://dashboard.resin.io/dashboard/apps/' + str(app) + '/devices/' + str(device['id']) +'?tab=logs'
     }
     payload = json.dumps(data)
     r = requests.post(url, headers=headers, data=payload)
