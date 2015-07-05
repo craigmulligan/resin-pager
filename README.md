@@ -40,7 +40,7 @@ heroku config:set RESIN_JWT=your_JWT
 Grab the app id of the app you'd like to monitor(find in url)
 https://dashboard.resin.io/dashboard/apps/1463
 
-NOTE: If you ommit this envar it will poll all your resin devices across every app.
+*NOTE: If you ommit this envar it will poll all your resin devices across every app.*
 
 ```
 heroku config:set RESIN_APP_ID=1463
