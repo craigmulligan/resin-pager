@@ -42,10 +42,6 @@ https://dashboard.resin.io/dashboard/apps/1463
 heroku config:set RESIN_APP_ID=1463
 ```
 
-```
-git push heroku master
-```
-
 ### Add scheduler 
 
 ```
