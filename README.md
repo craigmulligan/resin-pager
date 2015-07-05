@@ -2,7 +2,7 @@
 Integrate resin.io with PagerDuty to notify you when your device falls offline.
 
 ## How it works
-Made use of Heroku's job scheduler to poll resin.io's API for an app's devices every 10 minutes. If a device is offline it will log an incident on PagerDuty by the Resin Device ID, providing a timestamp of when it was last online and a link to the device logs on resin.io.
+Made use of Heroku's job scheduler to poll resin.io's API for an app's devices every 10 minutes. If a device is offline it will log an incident on PagerDuty by the Resin Device ID, providing a timestamp of when it was last online aswell as link to the device logs on resin.io.
 
 ![pagerduty incident](http://i.imgur.com/60q4hV3.png)
 
@@ -39,6 +39,9 @@ heroku config:set RESIN_JWT=your_JWT
 
 Grab the app id of the app you'd like to monitor(find in url)
 https://dashboard.resin.io/dashboard/apps/1463
+
+NOTE: If you ommit this envar it will poll all your resin devices across every app.
+
 ```
 heroku config:set RESIN_APP_ID=1463
 ```
