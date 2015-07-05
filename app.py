@@ -14,7 +14,7 @@ def devices_update():
 	# Get all devices associated with app
 	devices = connection.device_getAll(app_id=RESIN_APP)
 	for d in devices:
-		print d['name'] + " : " + d['is_online']
+		print d['name'] + " : " + str(d['is_online'])
 		if d['is_online'] == False:
 			# device is not online log incident on PD
 			log_incident(d, app=RESIN_APP, service_key=PD_SERVICE_KEY)
