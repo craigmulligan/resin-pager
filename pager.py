@@ -1,6 +1,6 @@
-import resin
-import requests
 import json
+import requests
+import resin
 
 
 def log_incident(device, app=None, service_key=None):
